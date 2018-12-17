@@ -19,7 +19,7 @@ public class Aufgabe1c {
 		}
 		else{
 			
-			while(true){
+			while(p != -1){
 
 				double n = (p-50)/50;
 				n = n*3;
@@ -52,7 +52,11 @@ public class Aufgabe1c {
 							break;						
 					}
 				StdOut.println("Note: " + nString); 	
+				
+				StdOut.println("Geben Sie eine neue erreichte Punktzahl ein: ");
+				p = StdIn.readDouble();
 			}
-		}				
+		}		
+		StdOut.println("Programmende!");
 	}
 }
